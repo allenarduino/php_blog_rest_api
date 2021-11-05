@@ -1,23 +1,21 @@
 <?php 
-  class Database {
-    // DB Params
-    private $host = 'localhost';
-    private $db_name = 'php_blog_api';
-    private $username = 'root';
-    private $password = '';
-    private $conn;
+    class Database {
+        private $host = "localhost";
+        private $database_name = "php_blog_api";
+        private $username = "root";
+        private $password = "";
 
-    // DB Connect
-    public function connect() {
-      $this->conn = null;
+        public $conn;
 
-      try { 
-        $this->conn = new PDO('mysql:host=' . $this->host . ';dbname=' . $this->db_name, $this->username, $this->password);
-        $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-      } catch(PDOException $e) {
-        echo 'Connection Error: ' . $e->getMessage();
-      }
-
-      return $this->conn;
-    }
-  }
+        public function getConnection(){
+            $this->conn = null;
+            try{
+                $this->conn = new PDO("mysql:host=" . $this->host . ";dbname=" . $this->database_name, $this->username, $this->password);
+                $this->conn->exec("set names utf8");
+            }catch(PDOException $exception){
+                echo "Database could not be connected";
+            }
+            return $this->conn;
+        }
+    }  
+?>
