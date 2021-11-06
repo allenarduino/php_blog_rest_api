@@ -101,7 +101,7 @@
     }
 
     // Update Post
-    public function update() {
+    public function update_post() {
           // Create query
           $query = 'UPDATE ' . $this->table . '
                                 SET title = :title, body = :body, author = :author, category_id = :category_id
