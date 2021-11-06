@@ -70,7 +70,7 @@
     }
 
     // Create Post
-    public function create() {
+    public function create_post() {
           // Create query
           $query = 'INSERT INTO ' . $this->table . ' SET title = :title, body = :body, author = :author, category_id = :category_id';
 
