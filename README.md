@@ -24,6 +24,11 @@ http://localhost:80/php_blog_rest_api/api/get_single_post/?id=2
 		alt="Capture 1"
 		src="https://github.com/allenarduino/php_blog_rest_api/blob/master/screenshots/screenshot2.png">
 
+<img
+		width="100%"
+		alt="Capture 1"
+		src="https://github.com/allenarduino/php_blog_rest_api/blob/master/screenshots/screenshot3.png">
+
 ### Author
 
 Allen Jones
