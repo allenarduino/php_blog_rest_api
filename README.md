@@ -2,6 +2,13 @@
 
 > This is a simple PHP REST API from scratch with no framework.
 
+## Database Schema
+
+<img
+		width="100%"
+		alt="Capture 1"
+		src="https://github.com/allenarduino/php_blog_rest_api/blob/master/screenshots/screenshot5.png">
+
 ## End points
 
 ### Get or fetch all posts:
