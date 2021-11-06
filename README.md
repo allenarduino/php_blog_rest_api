@@ -13,11 +13,17 @@
 
 ### Get or fetch all posts:
 
+```
 http://localhost:80/php_blog_rest_api/api/get_posts
+
+```
 
 ### Get or fetch a specific post with an id 2:
 
+```
 http://localhost:80/php_blog_rest_api/api/get_single_post/?id=2
+
+```
 
 ## Demo Screenshots
 
